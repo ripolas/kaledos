@@ -19,10 +19,10 @@ function setup(){
 function draw(){
     background(0);
     if(frameCount%(60*4)<60){
-        noTint();
         custom_image(prev_photo);
         tint(map(frameCount%(60*4),0,60,255,0));
         custom_image(photos[current_photo]);
+        noTint();
     }else{
         custom_image(photos[current_photo]);
     }
