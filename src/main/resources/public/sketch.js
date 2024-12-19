@@ -11,6 +11,7 @@ let photo_count = 8;
 let current_photo = 0;
 let photos = [];
 let prev_photo;
+let snowflakes = [];
 function setup(){
     createCanvas(windowWidth,windowHeight);
     for(let i = 0;i<photo_count;i++){
@@ -49,6 +50,25 @@ function draw(){
         }
     }
 
+
+    if (frameCount % 5 === 0) {
+        snowflakes.push({
+          x: random(width),
+          y: -10,
+          size: random(3, 8),
+          speed: random(1, 3)
+        });
+      }
+      for (let i = snowflakes.length - 1; i >= 0; i--) {
+        let flake = snowflakes[i];
+        fill(255);
+        noStroke();
+        ellipse(flake.x, flake.y, flake.size);
+        flake.y += flake.speed;
+        if (flake.y > height) {
+          snowflakes.splice(i, 1);
+        }
+      }
 }
 
 function custom_image(img) {
