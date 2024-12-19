@@ -30,7 +30,6 @@ function draw(){
     }else{
         custom_image(photos[current_photo]);
     }
-    image(border,0,0,width,height);
     textSize(min(width,height)/20);
     fill(0,150);
     noStroke();
