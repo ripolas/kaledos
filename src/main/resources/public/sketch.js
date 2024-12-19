@@ -32,11 +32,11 @@ function custom_image(img) {
   let canvasAspect = width / height;
   let drawWidth, drawHeight;
   if (imgAspect > canvasAspect) {
-    drawWidth = width;
-    drawHeight = width / imgAspect;
-  } else {
     drawHeight = height;
     drawWidth = height * imgAspect;
+  } else {
+    drawWidth = width;
+    drawHeight = width / imgAspect;
   }
   image(img, (width - drawWidth) / 2, (height - drawHeight) / 2, drawWidth, drawHeight);
 }
