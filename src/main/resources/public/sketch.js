@@ -1,8 +1,9 @@
 let wishes = [
-'palinkejimas1',
-'palinkejimas2',
-'palinkejimas3',
-'palinkejimas4',
+'Tegul šios gražios šventės geru džiaugsmu sušildo Jūsų širdis.',
+'Tegul ramybė, laimė, geri norai ir prasmingi darbai lydės tave ne tik per Kalėdas, bet ir visus ateinančius metus.',
+'Tebūnie Šv. Kalėdų rytmetys dovanoja ne tik materialias, bet ir meilės dovanas: apkabinimus, šypsenas, gilius pokalbius ir jaukią šeimos bendrystę.',
+'Gražių Šv. Kalėdų, mylimi draugai! Susirinkite į didelį būrį ir atšvęskit linksmai.',
+'Tegul šios Kalėdos tave maloniai nustebina ir viskas viskas tampa įmanoma.',
 ];
 let current_wish = 0;
 let photo_count = 8;
