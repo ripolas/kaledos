@@ -42,7 +42,7 @@ function draw(){
     }
     if(frameCount%(60*4)==0){
         current_photo++;
-        if(current_photo>photos.length){
+        if(current_photo>=photos.length){
             current_photo = 0;
         }
     }
