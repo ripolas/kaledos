@@ -1,7 +1,8 @@
 let wishes = [
 'palinkejimas1',
 'palinkejimas2',
-'palinkejimas3'
+'palinkejimas3',
+'palinkejimas4',
 ];
 let current_wish = 0;
 let photo_count = 8;
