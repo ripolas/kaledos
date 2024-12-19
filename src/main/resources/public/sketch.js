@@ -17,7 +17,8 @@ function draw(){
     background(0);
     custom_image(photos[0]);
     textSize(min(width,height)/20);
-    fill(0,100);
+    fill(0,50);
+    noStroke();
     rectMode(CENTER);
     rect(width/2,height/2,textWidth(wishes[current_wish]),min(width,height)/20);
     fill(255);
