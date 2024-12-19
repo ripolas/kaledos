@@ -15,7 +15,7 @@ function setup(){
 }
 function draw(){
     background(0);
-    image(photos[0],0,0);
+    custom_image(photos[0]);
     fill(255);
     textAlign(CENTER,CENTER);
     text(wishes[current_wish],width/2,height/2);
