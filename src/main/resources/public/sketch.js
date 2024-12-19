@@ -1,4 +1,4 @@
-let wishes [] = [
+let wishes = [
 'palinkejimas1',
 'palinkejimas2',
 'palinkejimas3'
