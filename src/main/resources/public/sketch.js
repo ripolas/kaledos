@@ -4,15 +4,21 @@ let wishes = [
 'palinkejimas3'
 ];
 let current_wish = 0;
+let photo_count = 8;
+let photos = [];
 function setup(){
     createCanvas(windowWidth,windowHeight);
+    for(int i = 0;i<photo_count;i++){
+        photos.push(loadImage((i+1)+".jpg"));
+    }
 }
 function draw(){
     background(0);
+    image(photos[0]);
     fill(255);
     textAlign(CENTER,CENTER);
     text(wishes[current_wish],width/2,height/2);
-    if(frameCount%(60*5)==0){
+    if(frameCount%(60*3)==0){
         current_wish++;
         if(current_wish>=wishes.length){
             current_wish = 0;
