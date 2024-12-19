@@ -19,10 +19,10 @@ function setup(){
 function draw(){
     background(0);
     if(frameCount%(60*4)<60){
-        custom_image(prev_photo);
-        tint(map(frameCount%(60*4),0,60,0,255));
-        custom_image(photos[current_photo]);
         noTint();
+        custom_image(prev_photo);
+        tint(map(frameCount%(60*4),0,60,255,0));
+        custom_image(photos[current_photo]);
     }else{
         custom_image(photos[current_photo]);
     }
@@ -42,7 +42,7 @@ function draw(){
         }
     }
     if(frameCount%(60*4)==0){
-        prev_photo = photos[current_photo]
+        prev_photo = photos[current_photo];
         current_photo++;
         if(current_photo>photos.length){
             current_photo = 0;
