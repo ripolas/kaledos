@@ -8,15 +8,25 @@ let current_wish = 0;
 let photo_count = 8;
 let current_photo = 0;
 let photos = [];
+let prev_photo;
 function setup(){
     createCanvas(windowWidth,windowHeight);
     for(let i = 0;i<photo_count;i++){
         photos.push(loadImage((i+1)+".jpg"));
     }
+    prev_photo = photos[0];
 }
 function draw(){
     background(0);
-    custom_image(photos[current_photo]);
+    if(frameCount%(60*4)<60){
+        custom_image(prev_photo);
+        tint(map(frameCount%(60*4),0,60,0,255));
+        custom_image(photos[current_photo]);
+        noTint();
+    }else{
+        custom_image(photos[current_photo]);
+    }
+
     textSize(min(width,height)/20);
     fill(0,150);
     noStroke();
@@ -32,11 +42,13 @@ function draw(){
         }
     }
     if(frameCount%(60*4)==0){
+        prev_photo = photos[current_photo]
         current_photo++;
         if(current_photo>photos.length){
             current_photo = 0;
         }
     }
+
 }
 
 function custom_image(img) {
