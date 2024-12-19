@@ -8,7 +8,7 @@ let photo_count = 8;
 let photos = [];
 function setup(){
     createCanvas(windowWidth,windowHeight);
-    for(int i = 0;i<photo_count;i++){
+    for(let i = 0;i<photo_count;i++){
         photos.push(loadImage((i+1)+".jpg"));
     }
 }
