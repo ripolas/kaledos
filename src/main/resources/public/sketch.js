@@ -56,7 +56,8 @@ function draw(){
           x: random(width),
           y: -10,
           size: random(3, 8),
-          speed: random(1, 3)
+          speed: random(1, 3),
+          speedX: random(-0.5,0.5);
         });
       }
       for (let i = snowflakes.length - 1; i >= 0; i--) {
@@ -65,6 +66,7 @@ function draw(){
         noStroke();
         ellipse(flake.x, flake.y, flake.size);
         flake.y += flake.speed;
+        flake.x += flake.speedX;
         if (flake.y > height) {
           snowflakes.splice(i, 1);
         }
