@@ -20,9 +20,8 @@ function draw(){
     background(0);
     if(frameCount%(60*4)<60&&current_photo!=0){
         noTint();
-
         custom_image(photos[current_photo-1]);
-        tint(map(frameCount%(60*4),0,60,255,0));
+        tint(map(frameCount%(60*4),0,60,0,255));
         custom_image(photos[current_photo]);
         noTint();
     }else{
