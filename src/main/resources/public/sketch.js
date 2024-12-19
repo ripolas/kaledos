@@ -12,8 +12,10 @@ let current_photo = 0;
 let photos = [];
 let prev_photo;
 let snowflakes = [];
+let border;
 function setup(){
     createCanvas(windowWidth,windowHeight);
+    border = loadImage("border.jpg");
     for(let i = 0;i<photo_count;i++){
         photos.push(loadImage((i+1)+".jpg"));
     }
@@ -28,7 +30,7 @@ function draw(){
     }else{
         custom_image(photos[current_photo]);
     }
-
+    image(border,0,0,width,height);
     textSize(min(width,height)/20);
     fill(0,150);
     noStroke();
