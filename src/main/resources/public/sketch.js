@@ -57,7 +57,7 @@ function draw(){
           y: -10,
           size: random(3, 8),
           speed: random(1, 3),
-          speedX: random(-0.5,0.5);
+          speedX: random(-0.5,0.5)
         });
       }
       for (let i = snowflakes.length - 1; i >= 0; i--) {
