@@ -2,7 +2,8 @@ let wishes = [
 'palinkejimas1',
 'palinkejimas2',
 'palinkejimas3'
-]
+];
+let current_wish = 0;
 function setup(){
     createCanvas(windowWidth,windowHeight);
 }
