@@ -51,7 +51,7 @@ function draw(){
     }
 
 
-    if (frameCount % 5 === 0) {
+    if (frameCount % 2 === 0) {
         snowflakes.push({
           x: random(width),
           y: -10,
