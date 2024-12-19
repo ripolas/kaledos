@@ -19,7 +19,7 @@ function draw(){
     textSize(min(width,height)/20);
     fill(0,100);
     rectMode(CENTER);
-    rect(0,0,min(width,height)/20,textWidth(wishes[current_wish]));
+    rect(width/2,height/2,min(width,height)/20,textWidth(wishes[current_wish]));
     fill(255);
     textAlign(CENTER,CENTER);
     text(wishes[current_wish],width/2,height/2);
