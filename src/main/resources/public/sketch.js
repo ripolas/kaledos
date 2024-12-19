@@ -26,3 +26,17 @@ function draw(){
         }
     }
 }
+
+function custom_image(img) {
+  let imgAspect = img.width / img.height;
+  let canvasAspect = width / height;
+  let drawWidth, drawHeight;
+  if (imgAspect > canvasAspect) {
+    drawWidth = width;
+    drawHeight = width / imgAspect;
+  } else {
+    drawHeight = height;
+    drawWidth = height * imgAspect;
+  }
+  image(img, (width - drawWidth) / 2, (height - drawHeight) / 2, drawWidth, drawHeight);
+}
