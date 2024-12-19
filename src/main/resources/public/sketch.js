@@ -15,6 +15,11 @@ function setup(){
 }
 function draw(){
     background(0);
+    textSize(min(width,height)/20);
+    fill(0,100);
+    rectMode(CENTER);
+    rect(0,0,min(width,height)/20,textWidth(wishes[current_wish]));
+
     custom_image(photos[0]);
     fill(255);
     textAlign(CENTER,CENTER);
