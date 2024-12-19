@@ -17,10 +17,10 @@ function draw(){
     background(0);
     custom_image(photos[0]);
     textSize(min(width,height)/20);
-    fill(0,50);
+    fill(0,150);
     noStroke();
     rectMode(CENTER);
-    rect(width/2,height/2,textWidth(wishes[current_wish]),min(width,height)/20);
+    rect(width/2,height/2,textWidth(wishes[current_wish])+50,min(width,height)/20+50);
     fill(255);
     textAlign(CENTER,CENTER);
     text(wishes[current_wish],width/2,height/2);
