@@ -6,6 +6,7 @@ let wishes = [
 ];
 let current_wish = 0;
 let photo_count = 8;
+let current_photo = 0;
 let photos = [];
 function setup(){
     createCanvas(windowWidth,windowHeight);
@@ -15,7 +16,7 @@ function setup(){
 }
 function draw(){
     background(0);
-    custom_image(photos[0]);
+    custom_image(photos[current_photo]);
     textSize(min(width,height)/20);
     fill(0,150);
     noStroke();
@@ -24,10 +25,16 @@ function draw(){
     fill(255);
     textAlign(CENTER,CENTER);
     text(wishes[current_wish],width/2,height/2);
-    if(frameCount%(60*3)==0){
+    if(frameCount%(60*5)==0){
         current_wish++;
         if(current_wish>=wishes.length){
             current_wish = 0;
+        }
+    }
+    if(frameCount%(60*4)==0){
+        current_photo++;
+        if(current_photo>photos.length){
+            current_photo = 0;
         }
     }
 }
