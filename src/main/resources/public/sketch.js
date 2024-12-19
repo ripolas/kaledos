@@ -1,10 +1,8 @@
 let wishes = [
-    'Pirmasis palinkėjimas mūsų vargšei klasei',
-    'Antrasis palinkėjimas mūsų vargšei klasei',
-    'Trečiasis palinkėjimas mūsų vargšei klasei',
-    'Ketvirtasis palinkėjimas mūsų vargšei klasei',
-    'Penktasis palinkėjimas mūsų vargšei klasei',
-
+    'Linksmų artėjančių Kalėdų ir Naujųjų metų!',
+    'Tegu klasės žvaigždutė žiba mūsų širdyse!',
+    'Lai sniegas papuošia Kalėdų ryto langus!',
+    'Tegu meduoliai atneša mums bendrystę ir vienybę!',
 ];
 let current_wish = 0;
 let photo_count = 8;
